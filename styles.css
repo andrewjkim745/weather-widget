@@ -1,0 +1,209 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh
+}
+
+h2 {
+	color: white;
+	margin-left: 140px;
+}
+
+h4 {
+	color: white;
+}
+
+h5 {
+	font-size: 10px;
+	font-family: "Arial";
+}
+
+h6 {
+	font-size: 8px;
+	font-family: "Arial";
+	color: white;
+
+}
+
+.weatherInfo {
+	display: flex; 
+	flex-direction: column;
+	justify-content: center; 
+	height: 57%;
+	background-color: lightskyblue;
+	border-style: solid;
+	border-color: white;
+	;
+	
+}
+.sun {
+	
+	display: flex; 
+	/* justify-content: center; */
+	width: 100%;
+	
+
+
+}
+
+.moon {
+	border-radius: 60px;
+	width: 20%;
+	margin-left: 158px;
+	margin-top: 50px;
+}
+
+
+.temperature {
+	/* display: flex; */
+	/* justify-content: center; */
+}
+
+/* .winds {
+	display: flex;
+
+} */
+
+.title {
+	display: flex;
+	justify-content: center;
+}
+.time {
+	display: flex;
+	justify-content: center;
+	background-color: limegreen;
+	border-style: solid;
+	border-color: white;
+}
+
+.widget-container {
+	height: 100%;
+}
+
+.widget {
+	display: flex;
+	justify-content: center;
+	background-color: limegreen;
+	color: white;
+	width: auto;
+	height: auto;
+	border-style: solid;
+	
+	
+}
+.location{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.weather-title {
+	display: flex;
+	justify-content: center;
+}
+nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background: #333;
+	flex: 0.2;
+}
+
+nav li {
+	list-style: none;
+	color: #f8f8f8;
+	padding: 0.5em 1.2em;
+	cursor: pointer;
+}
+
+.hero {
+	position: relative;
+	border: 1px solid blue;
+	min-height: 50vh;
+	background: rgba(0, 0, 0, 0.3);
+	display: flex;
+	align-items: center;
+}
+
+.hero .widget-container {
+	position: absolute;
+	left: 70%;
+	z-index: 1000;
+	background: rgba(0, 0, 0, 0.5);
+	min-height: 300px;
+	min-width: 400px;
+}
+
+main {
+	flex: 1;
+	display: flex;
+	border: 1px solid red;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: 80%;
+	margin: 2em auto 2em auto;
+}
+
+main .item {
+	min-height: 180px;
+	min-width: 200px;
+	background: #333;
+	border: 1px solid green;
+	margin: 1em;
+}
+
+footer {
+	flex: 0.8;
+	border: 1px solid purple;
+	background: #333;
+}
+
+@media (max-width: 1024px) {
+	.hero {
+		justify-content: center;
+		flex-direction: column;
+		height: auto;
+	}
+	.hero .widget-container {
+		position: relative;
+		margin: 1em auto;
+		left: 0;
+	}
+
+	main {
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 510px) {
+	.hero {
+		justify-content: center;
+		flex-direction: column;
+		height: auto;
+	}
+	.hero .widget-container {
+		position: relative;
+		margin: 1em auto;
+		left: 0;
+	}
+
+	main {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	main .item {
+		margin: 1em auto;
+	}
+}
